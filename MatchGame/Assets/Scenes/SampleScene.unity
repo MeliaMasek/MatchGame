@@ -274,6 +274,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &535424760
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,6 +672,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872137002}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> main
 --- !u!1 &1267496074
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,13 +824,18 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267496074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -3.01, y: -2.47, z: 0}
+=======
+  m_LocalPosition: {x: -3.01, y: 0, z: 0}
+>>>>>>> main
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1354636522
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,6 +1114,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685036152}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> main
 --- !u!1 &1699692783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,10 +1130,15 @@ GameObject:
   - component: {fileID: 1699692786}
   - component: {fileID: 1699692785}
   - component: {fileID: 1699692784}
+<<<<<<< HEAD
   - component: {fileID: 1699692790}
   - component: {fileID: 1699692791}
   m_Layer: 0
   m_Name: Matcher
+=======
+  m_Layer: 0
+  m_Name: Circle
+>>>>>>> main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1157,6 +1172,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< HEAD
       - m_Target: {fileID: 11400000, guid: 8494ab717b0fc3f4c8a7d1411d7027e1, type: 2}
         m_TargetAssemblyTypeName: IntData, Assembly-CSharp
         m_MethodName: UpdateValue
@@ -1181,6 +1197,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+=======
+>>>>>>> main
   noMatchEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1285,13 +1303,19 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699692783}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 3.43, y: -2.47, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+=======
+  m_LocalPosition: {x: 3.43, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+>>>>>>> main
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &1699692790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1439,3 +1463,5 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088055637}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> main
