@@ -1,4 +1,4 @@
-using System;using UnityEngine;
+using UnityEngine;
 using UnityEngine.Events;
 
 public class IdContainerBehavior : MonoBehaviour
