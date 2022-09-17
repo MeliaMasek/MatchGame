@@ -8,9 +8,10 @@ public class TriggerExit : MonoBehaviour
     {
         startEvent.Invoke();
 
-        void OnTriggerExit(Collider other)
+        /*void OnTriggerExit(Collider other)
         {
             Destroy(other.gameObject);
         }
+        */
     }
 }

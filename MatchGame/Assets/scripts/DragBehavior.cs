@@ -23,8 +23,8 @@ public class DragBehavior : MonoBehaviour
         while (drag)
         {
             yield return new WaitForFixedUpdate();
-            //Debug.Log("Drag");
             position = cameraObj.ScreenToWorldPoint(Input.mousePosition) + offset;
+            //Debug.Log(offset);
             transform.position = position;
         }
     }
