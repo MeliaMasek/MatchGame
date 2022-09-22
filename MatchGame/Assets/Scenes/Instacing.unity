@@ -134,11 +134,11 @@ GameObject:
   - component: {fileID: 579546169}
   - component: {fileID: 579546168}
   m_Layer: 0
-  m_Name: Instancer
+  m_Name: Instancer GameObj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &579546168
 MonoBehaviour:
@@ -155,7 +155,19 @@ MonoBehaviour:
   canRun: 0
   startEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 579546168}
+        m_TargetAssemblyTypeName: CoroutineBehavoir, Assembly-CSharp
+        m_MethodName: StartRepeatUntilFalse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   startCountEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -167,9 +179,21 @@ MonoBehaviour:
       m_Calls: []
   repeatUntilFalseEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: ff157dd1f23782f4abece1324b008a82, type: 2}
+        m_TargetAssemblyTypeName: Instancer, Assembly-CSharp
+        m_MethodName: CreateInstance
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1f28846515ede134385cf7625da8c6c6, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Vector3DataList, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   counterNum: {fileID: 0}
-  seconds: 3
+  seconds: 1
 --- !u!4 &579546169
 Transform:
   m_ObjectHideFlags: 0
@@ -178,7 +202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579546167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.964156, y: -0.16608973, z: -0.9591004}
+  m_LocalPosition: {x: 0.15, y: -0.16608973, z: -0.9591004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
