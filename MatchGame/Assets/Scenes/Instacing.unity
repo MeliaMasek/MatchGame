@@ -123,92 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &579546167
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 579546169}
-  - component: {fileID: 579546168}
-  m_Layer: 0
-  m_Name: Instancer GameObj
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!114 &579546168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579546167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e41185e5ef32e4647a785cf3203f6bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canRun: 0
-  startEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 579546168}
-        m_TargetAssemblyTypeName: CoroutineBehavoir, Assembly-CSharp
-        m_MethodName: StartRepeatUntilFalse
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  startCountEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  repeatCountEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  endCountEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  repeatUntilFalseEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: ff157dd1f23782f4abece1324b008a82, type: 2}
-        m_TargetAssemblyTypeName: Instancer, Assembly-CSharp
-        m_MethodName: CreateInstance
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 1f28846515ede134385cf7625da8c6c6, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Vector3DataList, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  counterNum: {fileID: 0}
-  seconds: 1
---- !u!4 &579546169
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579546167}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: -0.16608973, z: -0.9591004}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936154676
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,3 +207,62 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3346478125804620510
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3346478126383769319, guid: 150f112908fae914a9c95520709b3f68, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346478126383769319, guid: 150f112908fae914a9c95520709b3f68, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346478126383769319, guid: 150f112908fae914a9c95520709b3f68, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.16608973
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346478126383769319, guid: 150f112908fae914a9c95520709b3f68, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.9591004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346478126383769319, guid: 150f112908fae914a9c95520709b3f68, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346478126383769319, guid: 150f112908fae914a9c95520709b3f68, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346478126383769319, guid: 150f112908fae914a9c95520709b3f68, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346478126383769319, guid: 150f112908fae914a9c95520709b3f68, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346478126383769319, guid: 150f112908fae914a9c95520709b3f68, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346478126383769319, guid: 150f112908fae914a9c95520709b3f68, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346478126383769319, guid: 150f112908fae914a9c95520709b3f68, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346478126383769321, guid: 150f112908fae914a9c95520709b3f68, type: 3}
+      propertyPath: m_Name
+      value: Instancer GameObj
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 150f112908fae914a9c95520709b3f68, type: 3}
