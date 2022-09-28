@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bc0e2dd29c9514086dd525e646af47, type: 3}
   m_Name: D3D
   m_EditorClassIdentifier: 
-  value: {x: 4, y: -4, z: 0}
+  value: {x: 3, y: -4, z: 0}
