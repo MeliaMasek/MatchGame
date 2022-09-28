@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class CoroutineBehavoir : MonoBehaviour
 {
-    public bool canRun;
+    public bool CanRun { get; set; }
     public UnityEvent startEvent, startCountEvent, repeatCountEvent, endCountEvent, repeatUntilFalseEvent;
     public IntData counterNum;
     public float seconds = 3f;
@@ -40,13 +40,13 @@ public class CoroutineBehavoir : MonoBehaviour
 
     public void StartRepeatUntilFalse()
     {
-        canRun = true;
+        CanRun = true;
         StartCoroutine(RepeatUntilFalse());
     }
     
     private IEnumerator RepeatUntilFalse()
     {
-        while (canRun)
+        while (CanRun)
         {
             yield return wfsObj;
             repeatUntilFalseEvent.Invoke();

@@ -1009,6 +1009,7 @@ GameObject:
   - component: {fileID: 663648679}
   - component: {fileID: 663648678}
   - component: {fileID: 663648677}
+  - component: {fileID: 663648682}
   m_Layer: 5
   m_Name: Canvas(Match)
   m_TagString: Untagged
@@ -1125,6 +1126,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &663648682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663648676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9411556d8fc0e74dab02f8caf6733cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionobj: {fileID: 11400000, guid: fa7d33f4d4e4028418609268635206ca, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 663648677}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GameOverPlay
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &766245172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,6 +1248,7 @@ GameObject:
   - component: {fileID: 872137006}
   - component: {fileID: 872137005}
   - component: {fileID: 872137004}
+  - component: {fileID: 872137007}
   m_Layer: 5
   m_Name: ScoreNum
   m_TagString: Untagged
@@ -1315,6 +1345,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872137002}
   m_CullTransparentMesh: 1
+--- !u!114 &872137007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872137002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9411556d8fc0e74dab02f8caf6733cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionobj: {fileID: 11400000, guid: 61fd8fd7ef5f7124fbbbb250b730f204, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 872137004}
+        m_TargetAssemblyTypeName: TextLabelBehavior, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 8494ab717b0fc3f4c8a7d1411d7027e1, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1034772819 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 942079756915664219, guid: 1d4cd45be448b83478a4987e7188e694, type: 3}
@@ -1581,17 +1639,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107732617}
   m_CullTransparentMesh: 1
+--- !u!1 &1200744127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3346478126383769321, guid: 150f112908fae914a9c95520709b3f68, type: 3}
+  m_PrefabInstance: {fileID: 1619209433}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1200744129 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3346478126383769318, guid: 150f112908fae914a9c95520709b3f68, type: 3}
   m_PrefabInstance: {fileID: 1619209433}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1200744127}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e41185e5ef32e4647a785cf3203f6bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1200744131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200744127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9411556d8fc0e74dab02f8caf6733cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionobj: {fileID: 11400000, guid: fa7d33f4d4e4028418609268635206ca, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1200744127}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1267496074
 GameObject:
   m_ObjectHideFlags: 0
@@ -2826,6 +2917,7 @@ GameObject:
   - component: {fileID: 1685036156}
   - component: {fileID: 1685036155}
   - component: {fileID: 1685036154}
+  - component: {fileID: 1685036157}
   m_Layer: 5
   m_Name: HighScoreNum
   m_TagString: Untagged
@@ -2934,6 +3026,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685036152}
   m_CullTransparentMesh: 1
+--- !u!114 &1685036157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685036152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9411556d8fc0e74dab02f8caf6733cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionobj: {fileID: 11400000, guid: 61fd8fd7ef5f7124fbbbb250b730f204, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1685036154}
+        m_TargetAssemblyTypeName: TextLabelBehavior, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 4f7d464ea1cc3db4f8934681aa5ea4f9, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1699692783
 GameObject:
   m_ObjectHideFlags: 0
@@ -3541,7 +3661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41185e5ef32e4647a785cf3203f6bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canRun: 0
   startEvent:
     m_PersistentCalls:
       m_Calls:
