@@ -11,6 +11,8 @@ public class CoroutineBehavoir : MonoBehaviour
     private WaitForSeconds wfsObj;
     private WaitForFixedUpdate wffuObj;
 
+
+    
     private void Start()
     {
         startEvent.Invoke();
