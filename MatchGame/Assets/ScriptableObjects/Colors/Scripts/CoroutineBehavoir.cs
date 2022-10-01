@@ -4,15 +4,20 @@ using UnityEngine.Events;
 
 public class CoroutineBehavoir : MonoBehaviour
 {
-    public bool CanRun { get; set; }
+    public bool canRun;
     public UnityEvent startEvent, startCountEvent, repeatCountEvent, endCountEvent, repeatUntilFalseEvent;
     public IntData counterNum;
     public float seconds = 3f;
     private WaitForSeconds wfsObj;
     private WaitForFixedUpdate wffuObj;
 
+    public bool CanRun
+    {
+        get => canRun;
+        set => canRun = value;
+    }
 
-    
+
     private void Start()
     {
         startEvent.Invoke();

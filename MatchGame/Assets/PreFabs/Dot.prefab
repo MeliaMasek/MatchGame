@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: -481547324543484792}
   - component: {fileID: 7421004966178503921}
   - component: {fileID: 6956788857625182528}
-  - component: {fileID: -3762967490475051312}
   - component: {fileID: -7409698178061108936}
+  - component: {fileID: -7794436833841162499}
   m_Layer: 6
   m_Name: Dot
   m_TagString: Untagged
@@ -256,7 +256,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   colorIdDataListObj: {fileID: 11400000, guid: 8104ec179cefc3a4baaa83cd5040b242, type: 2}
---- !u!114 &-3762967490475051312
+--- !u!114 &-7409698178061108936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7273513444399685616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658a4aabf4d74484daf1dbe482235835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seconds: 10
+--- !u!114 &-7794436833841162499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -277,16 +290,3 @@ MonoBehaviour:
   endDragEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-7409698178061108936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7273513444399685616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 658a4aabf4d74484daf1dbe482235835, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seconds: 10
